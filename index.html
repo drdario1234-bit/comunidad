@@ -38,25 +38,15 @@
             width: 100%; 
             border: 1px solid #333;
             position: relative;
-            overflow: hidden;
         }
 
-        .header-section {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+        .header-section { text-align: center; margin-bottom: 30px; }
 
         .logo-box {
-            width: 60px;
-            height: 60px;
-            margin: 0 auto 15px;
-            border: 2px solid var(--primary-color);
-            border-radius: 12px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.8rem;
-            color: var(--primary-color);
+            width: 60px; height: 60px; margin: 0 auto 15px;
+            border: 2px solid var(--primary-color); border-radius: 12px;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 1.8rem; color: var(--primary-color);
             box-shadow: 0 0 15px var(--primary-glow);
             animation: pulse 2s infinite;
         }
@@ -68,151 +58,74 @@
         }
 
         h2 { 
-            color: var(--primary-color); 
-            margin: 0; 
-            font-size: 1.7rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-shadow: 0 0 10px var(--primary-glow);
+            color: var(--primary-color); margin: 0; 
+            font-size: 1.7rem; letter-spacing: 2px;
+            text-transform: uppercase; text-shadow: 0 0 10px var(--primary-glow);
         }
 
-        .brand-sub {
-            font-size: 0.75rem;
-            color: var(--text-gray);
-            letter-spacing: 4px;
-            display: block;
-            margin-top: 5px;
-        }
+        .brand-sub { font-size: 0.75rem; color: var(--text-gray); letter-spacing: 4px; display: block; margin-top: 5px; }
 
         .info-box { 
-            background: rgba(0, 255, 136, 0.05); 
-            padding: 25px; 
-            border-left: 5px solid var(--primary-color); 
-            margin-bottom: 30px; 
-            font-size: 0.95rem; 
-            line-height: 1.6;
-            color: #e0e0e0;
+            background: rgba(0, 255, 136, 0.05); padding: 25px; 
+            border-left: 5px solid var(--primary-color); margin-bottom: 30px; 
+            font-size: 0.95rem; line-height: 1.6; color: #e0e0e0;
         }
 
-        .info-box strong {
-            color: var(--primary-color);
-            font-size: 1.1rem;
-        }
-
-        .form-group { margin-bottom: 20px; position: relative; }
+        .form-group { margin-bottom: 20px; }
         
-        label { 
-            display: block; 
-            margin-bottom: 8px; 
-            font-weight: 600; 
-            font-size: 0.85rem; 
-            color: var(--primary-color);
-            text-transform: uppercase;
-        }
+        label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; }
 
         input, select, textarea { 
-            width: 100%; 
-            padding: 12px 15px; 
-            border-radius: 10px; 
-            border: 1px solid #444; 
-            background: var(--input-bg); 
-            color: white; 
-            box-sizing: border-box; 
-            font-size: 1rem;
-            transition: 0.3s;
-        }
-
-        input:focus, select:focus, textarea:focus { 
-            border-color: var(--primary-color); 
-            outline: none; 
-            box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+            width: 100%; padding: 12px 15px; border-radius: 10px; 
+            border: 1px solid #444; background: var(--input-bg); 
+            color: white; box-sizing: border-box; font-size: 1rem;
         }
 
         .btn { 
-            background: var(--primary-color); 
-            color: #000; 
-            border: none; 
-            padding: 18px; 
-            width: 100%; 
-            border-radius: 10px; 
-            font-weight: 800; 
-            font-size: 1rem;
-            cursor: pointer; 
-            transition: 0.3s; 
-            margin-top: 10px; 
-            text-transform: uppercase;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
+            background: var(--primary-color); color: #000; border: none; 
+            padding: 18px; width: 100%; border-radius: 10px; 
+            font-weight: 800; font-size: 1rem; cursor: pointer; 
+            transition: 0.3s; margin-top: 10px; text-transform: uppercase;
+            display: flex; justify-content: center; align-items: center; gap: 10px;
         }
 
-        .btn:hover { 
-            background: #00cc6e; 
-            transform: translateY(-3px); 
-            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
-        }
-
-        .btn-whatsapp {
-            background: #25d366 !important;
-            color: white !important;
-            text-decoration: none;
-        }
+        .btn:hover { background: #00cc6e; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3); }
 
         .footer-credit {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.75rem;
-            color: #555;
-            border-top: 1px solid #333;
-            padding-top: 15px;
+            text-align: center; margin-top: 30px; font-size: 0.75rem;
+            color: #555; border-top: 1px solid #333; padding-top: 15px;
         }
-
-        #successMessage {
-            animation: fadeIn 0.6s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        ::placeholder { color: #555; }
     </style>
 </head>
 <body>
 
 <div class="card">
     <div class="header-section">
-        <div class="logo-box">
-            <i class="fas fa-code"></i>
-        </div>
+        <div class="logo-box"><i class="fas fa-code"></i></div>
         <h2>MARK YIU | BETA PROGRAM</h2>
         <span class="brand-sub">DEVELOPER COMMUNITY</span>
     </div>
     
     <div class="info-box">
-        <strong>¡Bienvenido a nuestra comunidad!</strong><br><br>
-        Esta comunidad se basa en el trabajo conjunto para testear aplicaciones de desarrolladores independientes. Google exige un grupo sólido de testers para poder publicar.<br><br>
-        <strong>Estamos aquí para saltar esa pared juntos.</strong> Vamos a crear una comunidad fiel, haciendo la dinámica completa. Ayudándonos entre todos, lograremos impulsar nuestros proyectos al siguiente nivel.<br><br>
-        <em>Si estás listo para comprometerte y crecer, completa tus datos para acceder.</em>
+        <strong>¡Bienvenido Darío!</strong><br><br>
+        Completa el registro oficial para ser parte de la dinámica de testers. Al enviar, tus datos llegarán a mi correo y serás enviado al grupo privado.
     </div>
 
-    <form id="testerForm">
+    <form action="https://formspree.io/f/xdaywyyz" method="POST">
+        
         <div class="form-group">
             <label><i class="fas fa-user"></i> Nombre o Alias</label>
-            <input type="text" id="name" placeholder="Ej: Mark Yiu" required>
+            <input type="text" name="nombre" placeholder="Ej: Mark Yiu" required>
         </div>
 
         <div class="form-group">
             <label><i class="fas fa-envelope"></i> Correo Electrónico</label>
-            <input type="email" id="email" placeholder="tu@email.com" required>
+            <input type="email" name="email" placeholder="tu@email.com" required>
         </div>
 
         <div class="form-group">
             <label><i class="fab fa-android"></i> Versión de Android</label>
-            <select id="version" required>
-                <option value="">Selecciona tu versión...</option>
+            <select name="version_android" required>
                 <option value="android14">Android 14 (Latest)</option>
                 <option value="android13">Android 13</option>
                 <option value="android12">Android 12</option>
@@ -221,48 +134,19 @@
         </div>
 
         <div class="form-group">
-            <label><i class="fas fa-tools"></i> ¿Qué sabes hacer? (Habilidades)</label>
-            <textarea id="skills" rows="3" placeholder="Ej: Programación Java, reporte de bugs, etc..."></textarea>
+            <label><i class="fas fa-tools"></i> Habilidades</label>
+            <textarea name="habilidades" rows="3" placeholder="Ej: Reporte de bugs, Java..."></textarea>
         </div>
 
-        <div class="form-group">
-            <label><i class="fab fa-github"></i> Portafolio / GitHub (Opcional)</label>
-            <input type="text" id="portfolio" placeholder="Link a tu trabajo">
-        </div>
+        <input type="hidden" name="_next" value="https://chat.whatsapp.com/H1VXH7lCp8IHAV5QEOdXqO">
 
         <button type="submit" class="btn">Confirmar Compromiso y Unirse <i class="fas fa-rocket"></i></button>
     </form>
 
-    <div id="successMessage" style="display:none; text-align: center;">
-        <i class="fas fa-check-circle" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 20px;"></i>
-        <h3 style="color: var(--primary-color);">¡Registro Completado!</h3>
-        <p>Has pasado el filtro inicial de la organización. Bienvenido a la dinámica.</p>
-        <br>
-        <a href="https://chat.whatsapp.com/H1VXH7lCp8IHAV5QEOdXqO" class="btn btn-whatsapp">
-            <i class="fab fa-whatsapp"></i> ENTRAR AL GRUPO PRIVADO
-        </a>
-    </div>
-
     <div class="footer-credit">
-        ORGANIZACIÓN DISEÑADA POR <strong>MARK YIU</strong> &copy; 2026
+        DISEÑADO POR <strong>DARÍO ROMÁN TABARES</strong> (MARK YIU) &copy; 2026
     </div>
 </div>
-
-<script>
-    document.getElementById('testerForm').onsubmit = function(e) {
-        e.preventDefault();
-        
-        const btn = this.querySelector('.btn');
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Validando datos...';
-        btn.disabled = true;
-
-        setTimeout(() => {
-            this.style.display = 'none';
-            document.getElementById('successMessage').style.display = 'block';
-            window.scrollTo(0, 0);
-        }, 1500);
-    };
-</script>
 
 </body>
 </html>
