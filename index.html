@@ -38,15 +38,25 @@
             width: 100%; 
             border: 1px solid #333;
             position: relative;
+            overflow: hidden;
         }
 
-        .header-section { text-align: center; margin-bottom: 30px; }
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
         .logo-box {
-            width: 60px; height: 60px; margin: 0 auto 15px;
-            border: 2px solid var(--primary-color); border-radius: 12px;
-            display: flex; justify-content: center; align-items: center;
-            font-size: 1.8rem; color: var(--primary-color);
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 15px;
+            border: 2px solid var(--primary-color);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            color: var(--primary-color);
             box-shadow: 0 0 15px var(--primary-glow);
             animation: pulse 2s infinite;
         }
@@ -58,57 +68,118 @@
         }
 
         h2 { 
-            color: var(--primary-color); margin: 0; 
-            font-size: 1.7rem; letter-spacing: 2px;
-            text-transform: uppercase; text-shadow: 0 0 10px var(--primary-glow);
+            color: var(--primary-color); 
+            margin: 0; 
+            font-size: 1.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px var(--primary-glow);
         }
 
-        .brand-sub { font-size: 0.75rem; color: var(--text-gray); letter-spacing: 4px; display: block; margin-top: 5px; }
+        .brand-sub {
+            font-size: 0.75rem;
+            color: var(--text-gray);
+            letter-spacing: 4px;
+            display: block;
+            margin-top: 5px;
+        }
 
         .info-box { 
-            background: rgba(0, 255, 136, 0.05); padding: 25px; 
-            border-left: 5px solid var(--primary-color); margin-bottom: 30px; 
-            font-size: 0.95rem; line-height: 1.6; color: #e0e0e0;
+            background: rgba(0, 255, 136, 0.05); 
+            padding: 25px; 
+            border-left: 5px solid var(--primary-color); 
+            margin-bottom: 30px; 
+            font-size: 0.95rem; 
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        .info-box strong {
+            color: var(--primary-color);
+            font-size: 1.1rem;
         }
 
         .form-group { margin-bottom: 20px; }
         
-        label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.85rem; color: var(--primary-color); text-transform: uppercase; }
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: 600; 
+            font-size: 0.85rem; 
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
 
         input, select, textarea { 
-            width: 100%; padding: 12px 15px; border-radius: 10px; 
-            border: 1px solid #444; background: var(--input-bg); 
-            color: white; box-sizing: border-box; font-size: 1rem;
+            width: 100%; 
+            padding: 12px 15px; 
+            border-radius: 10px; 
+            border: 1px solid #444; 
+            background: var(--input-bg); 
+            color: white; 
+            box-sizing: border-box; 
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus { 
+            border-color: var(--primary-color); 
+            outline: none; 
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
         }
 
         .btn { 
-            background: var(--primary-color); color: #000; border: none; 
-            padding: 18px; width: 100%; border-radius: 10px; 
-            font-weight: 800; font-size: 1rem; cursor: pointer; 
-            transition: 0.3s; margin-top: 10px; text-transform: uppercase;
-            display: flex; justify-content: center; align-items: center; gap: 10px;
+            background: var(--primary-color); 
+            color: #000; 
+            border: none; 
+            padding: 18px; 
+            width: 100%; 
+            border-radius: 10px; 
+            font-weight: 800; 
+            font-size: 1rem;
+            cursor: pointer; 
+            transition: 0.3s; 
+            margin-top: 10px; 
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
         }
 
-        .btn:hover { background: #00cc6e; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3); }
+        .btn:hover { 
+            background: #00cc6e; 
+            transform: translateY(-3px); 
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+        }
 
         .footer-credit {
-            text-align: center; margin-top: 30px; font-size: 0.75rem;
-            color: #555; border-top: 1px solid #333; padding-top: 15px;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: #555;
+            border-top: 1px solid #333;
+            padding-top: 15px;
         }
+
+        ::placeholder { color: #555; }
     </style>
 </head>
 <body>
 
 <div class="card">
     <div class="header-section">
-        <div class="logo-box"><i class="fas fa-code"></i></div>
+        <div class="logo-box">
+            <i class="fas fa-code"></i>
+        </div>
         <h2>MARK YIU | BETA PROGRAM</h2>
         <span class="brand-sub">DEVELOPER COMMUNITY</span>
     </div>
     
     <div class="info-box">
-        <strong>¡Bienvenido Darío!</strong><br><br>
-        Completa el registro oficial para ser parte de la dinámica de testers. Al enviar, tus datos llegarán a mi correo y serás enviado al grupo privado.
+        <strong>¡Bienvenido a la dinámica oficial!</strong><br><br>
+        Esta comunidad se basa en el trabajo conjunto para testear aplicaciones. Google exige un grupo sólido de testers para poder publicar y <strong>estamos aquí para saltar esa pared juntos.</strong><br><br>
+        <em>Completa tus datos. Al enviar, la base de datos registrará tu compromiso y serás redirigido al grupo privado de WhatsApp.</em>
     </div>
 
     <form action="https://formspree.io/f/xdaywyyz" method="POST">
@@ -126,6 +197,7 @@
         <div class="form-group">
             <label><i class="fab fa-android"></i> Versión de Android</label>
             <select name="version_android" required>
+                <option value="">Selecciona tu versión...</option>
                 <option value="android14">Android 14 (Latest)</option>
                 <option value="android13">Android 13</option>
                 <option value="android12">Android 12</option>
@@ -134,17 +206,18 @@
         </div>
 
         <div class="form-group">
-            <label><i class="fas fa-tools"></i> Habilidades</label>
-            <textarea name="habilidades" rows="3" placeholder="Ej: Reporte de bugs, Java..."></textarea>
+            <label><i class="fas fa-tools"></i> Habilidades / Skills</label>
+            <textarea name="habilidades" rows="3" placeholder="Ej: Programación Java, reporte de bugs, tester experimentado..."></textarea>
         </div>
 
         <input type="hidden" name="_next" value="https://chat.whatsapp.com/H1VXH7lCp8IHAV5QEOdXqO">
+        <input type="hidden" name="_subject" value="Nuevo Tester Registrado - Mark Yiu Program">
 
         <button type="submit" class="btn">Confirmar Compromiso y Unirse <i class="fas fa-rocket"></i></button>
     </form>
 
     <div class="footer-credit">
-        DISEÑADO POR <strong>DARÍO ROMÁN TABARES</strong> (MARK YIU) &copy; 2026
+        ORGANIZACIÓN DISEÑADA POR <strong>MARK YIU</strong> &copy; 2026
     </div>
 </div>
 
